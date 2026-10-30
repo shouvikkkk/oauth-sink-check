@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oauth-sink-check"
+version = "1.0.0"
+description = "Trace untrusted OAuth/endpoint URLs to shell sinks: the open < 11 / MCP OAuth attack class (CVE-2026-119025)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Shouvik Maji" }]
+
+[project.scripts]
+oauth-sink-check = "oauth_sink_check.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["oauth_sink_check*"]
