@@ -44,7 +44,7 @@ _AUG_RE = re.compile(r"^\s*([A-Za-z_][\w]*)\s*\+=(?!=)")
 _DEF_RE = re.compile(r"^\s*def\s+([A-Za-z_]\w*)\s*\(([^)]*)\)")
 _FUNC_RE = re.compile(
     r"(?:function\s+([A-Za-z_$][\w$]*)|"
-    r"const\s+([A-Za-z_$][\w$]*)\s*=\s*(?:async\s*)?\("
+    r"const\s+([A-Za-z_$][\w$]*)\s*=\s*(?:async\s*)?\()"
     r"\s*([^)]*)\)")
 _RETURN_RE = re.compile(r"^\s*return\s+(.+)$")
 _CALL_RE = re.compile(r"([A-Za-z_$][\w$]*)\s*\(([^()]*)\)")
