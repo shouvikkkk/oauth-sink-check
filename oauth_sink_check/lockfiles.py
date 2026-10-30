@@ -339,8 +339,7 @@ def scan_project(root):
                 os.path.join(dirpath, "package-lock.json"))
             lock_source = "package-lock.json"
         elif "yarn.lock" in filenames:
-            resolved = _yarn_lock_versions(
-                os.path.join(dirpath, "yarn.lock"))
+            resolved = _yarn_lock_versions(os.path.join(dirpath, "yarn.lock"))
             lock_source = "yarn.lock (best-effort)"
         elif "pnpm-lock.yaml" in filenames:
             resolved = _pnpm_lock_versions(
